@@ -12,3 +12,28 @@
     --font_family: "League Spartan";
 
 }
+body {
+    font-family: "League Spartan";
+}
+/* Rating section style */
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--Light_Grayish_Magenta);
+    color: var(--Very_Dark_Magenta);
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0 30px 0 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+.rating img {
+    margin-right: 10px;
+}
+.rating p {
+    font-weight: 700;
+    margin-left: 30px;
+}

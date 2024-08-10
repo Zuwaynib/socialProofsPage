@@ -1,14 +1,92 @@
 :root {
-    /*
+  /*
     Social Proofs Page
 
     These are the CSS Variables according to the style guide.
     */
-    --White: hsl(0, 0%, 100%);
-    --Soft_Pink: hsl(333, 80%, 67%);
-    --Very_Dark_Magenta: hsl(300, 43%, 22%);
-    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
-    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
-    --font_family: "League Spartan";
+  --White: hsl(0, 0%, 100%);
+  --Soft_Pink: hsl(333, 80%, 67%);
+  --Very_Dark_Magenta: hsl(300, 43%, 22%);
+  --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+  --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+  --font_family: "League Spartan";
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font_family);
+}
+.card_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "start ref2 end";
+  place-content: center;
+  place-items: center;
+  gap: -25px;
+  margin-top: 50px;
+}
+.FIRST_CARD {
+  grid-area: start;
+}
+
+.SECOND_CARD {
+  grid-area: ref2;
+  transform: translateY(20px);
+}
+
+.THIRD_CARD {
+  grid-area: end;
+  transform: translateY(40px);
+}
+.FIRST_CARD,
+.SECOND_CARD,
+.THIRD_CARD {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 10px;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 40px;
+  background-color: var(--Very_Dark_Magenta);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px slid #ccc;
+}
+
+section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+section p {
+  color: var(--White);
+  font-size: 19px;
+}
+
+.sharer1_info,
+.sharer2_info,
+.sharer3_info {
+  display: flex;
+  transform: translateY(-15px);
+}
+
+div span {
+  line-height: 5px;
+  margin-left: 20px;
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+div span h3:first-child {
+  color: var(--White);
+}
+
+div span h3:nth-child(2) {
+  color: var(--Soft_Pink);
 }

@@ -34,3 +34,15 @@ White: hsl(0, 0%, 100%)
 - Weights: 400, 500, 700
 
 >
+
+### card
+
+-width: 100%;
+-max-width: 300px; /_ Optional: use this for a fixed width _/
+-height: auto; /_ Optional: use a fixed height if required _/
+-padding: 20px;
+-margin: 10px;
+-background-color: white; /_ background color _/
+-border: 1px solid #ccc; /_ border _/
+-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /_ shadow _/
+-border-radius: 8px; /_ rounded corners _/

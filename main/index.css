@@ -114,3 +114,35 @@ div span h3:first-child {
 div span h3:nth-child(2) {
   color: var(--Soft_Pink);
 }
+
+/* Header section style */
+header {
+  text-align: center;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+header h1,
+p {
+  color: var(--Very_Dark_Magenta);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  max-width: 300px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 20px 0 0;
+  max-width: 450px;
+  font-weight: 300;
+}
+
+/* For screen width > mobile */
+@media (min-width: 641px) {
+  header {
+    text-align: start;
+  }
+}

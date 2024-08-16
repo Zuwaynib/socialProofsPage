@@ -129,6 +129,7 @@ header {
 header h1,
 p {
   color: var(--Very_Dark_Magenta);
+  font-size: 14px;
 }
 
 header h1 {

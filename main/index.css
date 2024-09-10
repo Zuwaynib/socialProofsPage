@@ -210,7 +210,80 @@ header h1 {
 
 /* For screen width > mobile */
 /* @media (min-width: 641px) {
-  header {
-    text-align: start;
+/* For mobile view*/
+@media (min-width: 320px) and (max-width: 475px) {
+  header h1 {
+    font-size: 2.5rem;
+    margin-block-start: -40%;
+    text-align: center;
   }
-} */
+
+  .banner_text p {
+    width:100%;
+    margin-left: -25%;
+    text-align:center;
+    line-height: 1.2;
+  }
+
+  .rating div{
+    width:200px;
+  }
+
+  .ratings-section {
+    display: flex;
+    flex-direction: column;
+    transform: unset;
+    padding-top: 250px;
+    padding-left: 10px;
+    width:85%;
+    margin-left: -12%;
+  }
+
+  .ratings-section div {
+    transform: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:-5px;
+    width:90%;
+    height:65px;
+    
+  }
+
+  .ratings-section, div p {
+    flex-basis: 100%;
+    padding-left: 20%;
+    margin-top: 10px;
+    font-size: 15px;
+    
+  }
+
+  .star_icon {
+    display: block;
+    width:5%;
+    height: 15px;
+    padding-inline-start: 10px;
+    padding-top:15px;
+    
+  }
+ 
+
+  .card_section {
+    display: flex;
+    flex-direction: column;
+    margin:15%;
+    justify-content: space-between;
+    
+  }
+  .card_section section {
+    height:150px;
+    width:90%;
+  }
+
+  .card_section p {
+    font-size: 16px;
+    line-height: 1.3;
+    padding-left: 0px;
+    font-weight: 400;
+    
+  }
+}
